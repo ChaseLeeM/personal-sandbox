@@ -67,6 +67,12 @@ for (let i = 0; i < 10; i++) {
     console.log(`For Loop #${i + 1}.`);
 }
 
+let classmates = ["Andre", "Chris", "Titus"];
+
+for (let i = 0; i < classmates.length; i++) {
+    console.log(`Index ${i} is ${classmates[i]}.`);
+}
+
 // num += 2 // num = num + 2;
 // num -= 2 // num = num - 2;
 // num *= 2 // num = num * 2;
