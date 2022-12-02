@@ -2,6 +2,9 @@ let owner = "Chase"
 
 hello(owner);
 
+
+// Math.floor((Math.random() * 1000) + 1)
+
 // 1) Understand the problem
 // - read the problem and reread it
 // - review existing examples
@@ -38,7 +41,11 @@ hello(owner);
 //     }
 // }
 
-//ternary form
+//Ternary form
+// function $name(){
+//     return condition ? true : false
+//}
+
 // function removeFirstCharacter(input) {
 //     if (typeof input !== 'string') return false;
 //     return (input.length === 0) ? input : input.slice(1);
@@ -54,3 +61,16 @@ hello(owner);
 function hello(input){
     console.log(`Hello ${input}!`);
 }
+
+//Loops
+for (let i = 0; i < 10; i++) {
+    console.log(`For Loop #${i + 1}.`);
+}
+
+// num += 2 // num = num + 2;
+// num -= 2 // num = num - 2;
+// num *= 2 // num = num * 2;
+// num /= 2 // num = num / 2;
+//num++ // num = num + 1;
+//num-- // num = num - 1;
+
