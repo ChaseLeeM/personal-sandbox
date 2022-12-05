@@ -80,3 +80,21 @@ for (let i = 0; i < classmates.length; i++) {
 //num++ // num = num + 1;
 //num-- // num = num - 1;
 
+//Array Manipulation
+
+//array.push()      adds a new last element
+//array.pop()       removes the last element
+//array.unshift()   adds a new first element
+//array.shift()      removes the first element
+
+// var daysOfTheWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday'];
+// console.log(daysOfTheWeek);
+// ['Monday', 'Tuesday', 'Wednesday', 'Thursday']
+// let's add 'Sunday' to the beginning of the week
+// daysOfTheWeek.unshift('Sunday');
+// console.log(daysOfTheWeek);
+// ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday']
+// let's add 'Friday' and 'Saturday' to the end of the week
+// daysOfTheWeek.push('Friday', 'Saturday');
+// console.log(daysOfTheWeek);
+// ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
