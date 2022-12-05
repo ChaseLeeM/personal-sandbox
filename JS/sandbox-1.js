@@ -58,20 +58,20 @@ hello(owner);
 
 
 
-function hello(input){
-    console.log(`Hello ${input}!`);
-}
+// function hello(input){
+//     console.log(`Hello ${input}!`);
+// }
 
 //Loops
-for (let i = 0; i < 10; i++) {
-    console.log(`For Loop #${i + 1}.`);
-}
-
-let classmates = ["Andre", "Chris", "Titus"];
-
-for (let i = 0; i < classmates.length; i++) {
-    console.log(`Index ${i} is ${classmates[i]}.`);
-}
+// for (let i = 0; i < 10; i++) {
+//     console.log(`For Loop #${i + 1}.`);
+// }
+//
+// let classmates = ["Andre", "Chris", "Titus"];
+//
+// for (let i = 0; i < classmates.length; i++) {
+//     console.log(`Index ${i} is ${classmates[i]}.`);
+// }
 
 // num += 2 // num = num + 2;
 // num -= 2 // num = num - 2;
@@ -98,3 +98,12 @@ for (let i = 0; i < classmates.length; i++) {
 // daysOfTheWeek.push('Friday', 'Saturday');
 // console.log(daysOfTheWeek);
 // ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+
+let months = ["April","May","June"];
+console.log(months);
+months.push("July");
+console.log(months);
+months.unshift("March");
+console.log(months);
+months.pop();
+console.log(months);
