@@ -58,9 +58,9 @@ hello(owner);
 
 
 
-// function hello(input){
-//     console.log(`Hello ${input}!`);
-// }
+function hello(input){
+    console.log(`Hello ${input}!`);
+}
 
 //Loops
 // for (let i = 0; i < 10; i++) {
@@ -107,3 +107,93 @@ months.unshift("March");
 console.log(months);
 months.pop();
 console.log(months);
+
+//Locating
+
+// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'red'];
+// var index = colors.indexOf('green');
+// console.log(index);
+// 3
+// index = colors.indexOf('red');
+// console.log(index);
+// 0
+// index = colors.lastIndexOf('red');
+// console.log(index);
+// 7
+
+//Slicing
+
+// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+// var slice = colors.slice(2, 4);
+// console.log(colors); // colors is unchanged
+// ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+// console.log(slice); // ['yellow', 'green']
+// slice = colors.slice(3);
+// console.log(slice); // ['green', 'blue', 'indigo', 'violet']
+
+//Reversing
+
+// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+// console.log(colors);
+// ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+// console.log('Reversing the colors array.');
+// colors.reverse();
+// console.log(colors);
+// ['violet', 'indigo', 'blue', 'green', 'yellow', 'orange', 'red']
+
+//Sorting - sorting within the variable
+
+// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+// console.log(colors);
+// ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+// console.log('Sorting the colors array.');
+// colors.sort();
+// console.log(colors);
+// ['blue', 'green', 'indigo', 'orange', 'red', 'violet', 'yellow']
+
+//In order to sort numbers you need to run a mathematical evaluation on your array.
+// function compareNumbers(a,b){
+//     return a - b
+// }
+
+
+//Splitting - taking a string and turning it into an array
+
+// var namesString = "Joe,Bob,Sally";
+// console.log(namesString);
+// Joe,Bob,Sally
+//
+// var namesArray = namesString.split(',');
+// console.log(namesArray);
+
+//Joining - taking an array and turning it into a string
+// var namesArray = ['Joe', 'Bob', 'Sally'];
+// console.log(namesArray);
+// ['Joe', 'Bob', 'Sally']
+// var namesString = namesArray.join(',');
+// console.log(namesString);
+// Joe,Bob,Sally
+
+// ============================= !! MINI-EXERCISE 2 !!
+
+/*
+    1. Put the first names of everyone in your row in the order they are sitting (just your half of the classroom)
+    2. Log the alphabetical order of everyone in your row
+    3. Log the reverse alphabetical order of everyone in your row
+    4. Log everyone in the row in reverse order
+    5. Log an array of just the first two students in the row (left to right)
+    6. Log everyone in the row in a single string separated by spaces
+    7. Log everyone in the row in a single string separated by underscores
+ */
+
+let myRow = ['Andre','Chase','Chris','Will'];
+console.log(myRow.sort());
+console.log(myRow.reverse());
+console.log(myRow.sort().reverse());
+let myRowSlice = myRow.reverse().slice(2);
+console.log(myRowSlice);
+console.log(myRow.join(" "));
+console.log(myRow.join("_"));
+
+
+
