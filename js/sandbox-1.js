@@ -268,25 +268,25 @@ function hello(input){
 
 //Mini Exercise 2
 
-const users = [
-    {
-        givenName: 'Sam',
-        age: 21
-},
-{
-    givenName: 'Cathy',
-    age: 34
-},
-{
-    givenName: 'Karen',
-    age: 43
-}
-];
+// const users = [
+//     {
+//         givenName: 'Sam',
+//         age: 21
+// },
+// {
+//     givenName: 'Cathy',
+//     age: 34
+// },
+// {
+//     givenName: 'Karen',
+//     age: 43
+// }
+// ];
 // 0. Log each given name
-
-for (let i = 0; i < users.length; i +=1){
-    console.log(users[i].givenName);
-}
+//
+// for (let i = 0; i < users.length; i +=1){
+//     console.log(users[i].givenName);
+// }
 
 
 // 1. Log the names of all users in a single console log separated by spaces. // output = “Sam Cathy Karen”
@@ -294,14 +294,14 @@ for (let i = 0; i < users.length; i +=1){
 //     let singleLine = users[i].givenName.toString(' ');
 //     console.log(singleLine);
 // }
-let singleLineArray = [];
-users.forEach(function (user){
-    let givenName = user.givenName;
-    singleLineArray.push(givenName);
-});
-
-
-console.log(singleLineArray.join(' '));
+// let singleLineArray = [];
+// users.forEach(function (user){
+//     let givenName = user.givenName;
+//     singleLineArray.push(givenName);
+// });
+//
+//
+// console.log(singleLineArray.join(' '));
 
 // 2. Change the names of all users to “John Doe”
 // users.forEach(function (user){
@@ -313,111 +313,133 @@ console.log(singleLineArray.join(' '));
 // 3. Increase the current age of all users by 1
 // Can you accomplish each step using iteration?
 
-users.forEach(function (user){
-    user.age += 1;
-});
-
-console.log(users);
-
-//Looking for users over 30.
-users.forEach(function (user){
-    if (user.age > 30){
-        console.log(user.givenName);
-    } else {
-        console.log(`Hey youngster, ${user.givenName}.`);
-    }
-});
-//User with the longest name
-let longestName = "";
-users.forEach(function (user){
-    if (user.givenName.length > longestName.length){
-        longestName = user.givenName;
-    }
-});
-console.log(`Longest name is ${longestName}`);
-
+// users.forEach(function (user){
+//     user.age += 1;
+// });
+//
+// console.log(users);
+//
+// Looking for users over 30.
+// users.forEach(function (user){
+//     if (user.age > 30){
+//         console.log(user.givenName);
+//     } else {
+//         console.log(`Hey youngster, ${user.givenName}.`);
+//     }
+// });
+// User with the longest name
+// let longestName = "";
+// users.forEach(function (user){
+//     if (user.givenName.length > longestName.length){
+//         longestName = user.givenName;
+//     }
+// });
+// console.log(`Longest name is ${longestName}`);
+//
 //      Assigning Functionality to an Object
+//
+// const dog = {
+//     petName: 'Sparky',
+//     age: 4,
+//     bark: function() {
+//         console.log("Woof woof");
+//     },
+//     eat: function(food){
+//         console.log(`Sparky eats ${food}.`);
+//     },
+//     agePet: function(){
+//         this.age += 1; //this!
+//     }
+// }
+//
+//
+//
+// dog.bark();
+// dog.eat('kibble');
+// dog.agePet();
+// console.log(dog);
+// dog.agePet();
+// console.log(dog);
+// dog.agePet();
+// console.log(dog);
+//
+// const pets = [
+//     {
+//         name: 'Sparky',
+//         type: 'Fish',
+//         age: 4
+//     },
+//     {
+//         name: 'Piggy',
+//         type: 'Cat',
+//         age: 4
+//     },
+//     {
+//         name: 'Bubba',
+//         type: 'Dog',
+//         age: 5
+//     },
+//     {
+//         name: 'Pickles',
+//         type: 'Dog',
+//         age: 10
+//     },
+//     {
+//         name: 'Beans',
+//         type: 'Dog',
+//         age: 3
+//     },
+//     {
+//         name: 'Mr. Salmon',
+//         type: 'Fish',
+//         age: 1
+//     }
+// ]
 
-const dog = {
-    petName: 'Sparky',
-    age: 4,
-    bark: function() {
-        console.log("Woof woof");
-    },
-    eat: function(food){
-        console.log(`Sparky eats ${food}.`);
-    },
-    agePet: function(){
-        this.age += 1; //this!
-    }
+// function averageDogAge(pet){
+//     let total = 0
+//     let dogCount = 0
+//     pets.forEach((pet){
+//         if (pet.type === 'Dog') {
+//             total += pet.age;
+//             dogCount++;
+//         }
+//     });
+//     return total / dogCount;
+// }
+//
+// console.log(averageDogAge(pets));
+//
+// function returnPetsWithNoFish(pets){
+//     const notAFish = [];
+//     pets.forEach(pet => {
+//         if (pet.type !== 'Fish') {
+//             notAFish.push(pet);
+//         }
+//     });
+//     return notAFish;
+// }
+//
+// console.log(returnPetsWithNoFish(pets));
+//
+// function returnLastTwoChars(input){
+//     return (input.slice(-2));
+// }
+//
+// console.log(returnLastTwoChars('Chase'))
+// // returnLastTwoChars(‘cat’) // returns ‘at’
+// // returnLastTwoChars(‘hello’) // returns ‘lo’
+// // returnLastTwoChars(‘hi’) // returns ‘hi’
+//
+// function returnLastCharsReversed(input,num) {
+//     return input.split("").reverse().slice(0, num).join('');
+// }
+//
+// console.log(returnLastCharsReversed('Chase',2))
+
+function iBeforeE(input) {
+    let output = '';
+
 }
 
-
-
-dog.bark();
-dog.eat('kibble');
-dog.agePet();
-console.log(dog);
-dog.agePet();
-console.log(dog);
-dog.agePet();
-console.log(dog);
-
-const pets = [
-    {
-        name: 'Sparky',
-        type: 'Fish',
-        age: 4
-    },
-    {
-        name: 'Piggy',
-        type: 'Cat',
-        age: 4
-    },
-    {
-        name: 'Bubba',
-        type: 'Dog',
-        age: 5
-    },
-    {
-        name: 'Pickles',
-        type: 'Dog',
-        age: 10
-    },
-    {
-        name: 'Beans',
-        type: 'Dog',
-        age: 3
-    },
-    {
-        name: 'Mr. Salmon',
-        type: 'Fish',
-        age: 1
-    }
-]
-
-function averageDogAge(pet){
-    let total = 0
-    let dogCount = 0
-    pets.forEach((pet){
-        if (pet.type === 'Dog') {
-            total += pet.age;
-            dogCount++;
-        }
-    });
-    return total / dogCount;
-}
-
-console.log(averageDogAge(pets));
-
-function returnPetsWithNoFish(pets){
-    const notAFish = [];
-    pets.forEach(pet => {
-        if (pet.type !== 'Fish') {
-            notAFish.push(pet);
-        }
-    });
-    return notAFish;
-}
-
-console.log(returnPetsWithNoFish(pets));
+let iBeforeE = string => string.split('ei').join('ie')
