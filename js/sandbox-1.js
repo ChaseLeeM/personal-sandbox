@@ -437,9 +437,19 @@ function hello(input){
 //
 // console.log(returnLastCharsReversed('Chase',2))
 
-function iBeforeE(input) {
-    let output = '';
 
-}
+// let iBeforeE = string => string.split('ei').join('ie')
 
-let iBeforeE = string => string.split('ei').join('ie')
+// Create a function, filterList, that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+// filterList([1,2,‘a’,‘b’]) // returns [1,2]
+// filterList([1,‘a’,‘b’,0,15]) // returns [1,0,15]
+// filterList([1,2,‘aasf’,‘1’,‘123’,123]) // returns [1,2,123]
+
+// function filterList(input){
+//     let array=[];
+//     for(let i = 0; i < input.length; i++){
+//         if(typeof input[i] !== 'string')
+//     }
+// }  unfinished
+
+
