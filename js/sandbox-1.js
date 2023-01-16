@@ -469,16 +469,132 @@ function hello(input){
 // <!--25-->
 // <!--]-->
 //
-const zip1 = ['a','b'];
-const zip2 = [1,2];
-function zipArrays(array1,array2){
-    let zipped = []
-    if (array1.length === 0) {
-        return [];
-    }
-    for (let i = 0; i < array1.length; i += 1){
-        zipped.push(array1[i])
-        zipped.push(array2[i])
-    }
-    return zipped;
-}
+// const zip1 = ['a','b'];
+// const zip2 = [1,2];
+// function zipArrays(array1,array2){
+//     let zipped = []
+//     if (array1.length === 0) {
+//         return [];
+//     }
+//     for (let i = 0; i < array1.length; i += 1){
+//         zipped.push(array1[i])
+//         zipped.push(array2[i])
+//     }
+//     return zipped;
+// }
+// console.log(zipArrays(zip1,zip2));
+
+// ================================= WARM UP
+//
+// Write a function, getUserCredentials, that takes in a list of user objects and returns a list of user objects with only the username and password properties. Assume at least an array of one user object.
+//
+//
+//     const users = [
+//     {
+//         firstName: 'Justin',
+//         lastName: 'Reich',
+//         dob: '1923-01-01',
+//         username: 'jreich',
+//         password: '$2y$10$UJlsa5vWq5DUKJjyO38gM.dCZfudWOFCrLWQosh0mhXKaZmRmvDse'
+//     },
+//     {
+//         firstName: 'Sally',
+//         lastName: 'Smith',
+//         dob: '1935-03-11',
+//         username: 'ssmith',
+//         password: '$2y$10$VaLGU5.7uQLr.eg6kSI9seOcP4JY4XktWt28I9JgblAGIDpkDXbya'
+//     },
+//     {
+//         firstName: 'Fred',
+//         lastName: 'Smith',
+//         dob: '1999-01-21',
+//         username: 'fsmith',
+//         password: '$2y$10$3USt6Dl8TNMkeh0KioPnfeVpynAotXvSIJ5xrzAHragPEAWMYEBNS'
+//     },
+// ]
+
+// function getUserCredentials(users){
+//     const credentials =[];
+//     for (let i =0; i < users.length; i++){
+//         const user=users(i);
+//         credentials.push({username: user.username, password: user.password });
+//     }
+//     return credentials;
+// }
+// function getUserCredentials(array){
+//     let credentials = [];
+//     array.forEach(function(user){
+//         credentials.push({username: user.username, password: user.password})
+//     })
+//     return credentials;
+// }
+//
+// console.log(getUserCredentials(users)) // returns...
+
+/*
+//
+// [
+//   {
+//     username: 'jreich',
+//     password: '$2y$10$UJlsa5vWq5DUKJjyO38gM.dCZfudWOFCrLWQosh0mhXKaZmRmvDse'
+//   },
+//   {
+//     username: 'ssmith',
+//     password: '$2y$10$VaLGU5.7uQLr.eg6kSI9seOcP4JY4XktWt28I9JgblAGIDpkDXbya'
+//   },
+//   {
+//     username: 'fsmith',
+//     password: '$2y$10$3USt6Dl8TNMkeh0KioPnfeVpynAotXvSIJ5xrzAHragPEAWMYEBNS'
+//   }
+// ]
+//
+// */
+//
+// // This loop should print the numbers from 0 through 9 in the console
+//
+// for (let i = 0; i < 10; i++) {
+//     console.log("The value of i is " + i);
+//     i++;
+// }
+//
+// // desired output : 0, 1 ,2,  3, 4, 5, 6, 7, 8, 9
+// var coffees = [
+//     {id: 1, name: 'Light City', roast: 'light'},
+//     {id: 2, name: 'Half City', roast: 'light'},
+//     {id: 3, name: 'Cinnamon', roast: 'light'},
+//     {id: 4, name: 'City', roast: 'medium'},
+//     {id: 5, name: 'American', roast: 'medium'},
+//     {id: 6, name: 'Breakfast', roast: 'medium'},
+//     {id: 7, name: 'High', roast: 'dark'},
+//     {id: 8, name: 'Continental', roast: 'dark'},
+//     {id: 9, name: 'New Orleans', roast: 'dark'},
+//     {id: 10, name: 'European', roast: 'dark'},
+//     {id: 11, name: 'Espresso', roast: 'dark'},
+//     {id: 12, name: 'Viennese', roast: 'dark'},
+//     {id: 13, name: 'Italian', roast: 'dark'},
+//     {id: 14, name: 'French', roast: 'dark'},
+// ];
+//
+//
+// function renderCoffee(coffee) {
+//     var html = '<div class="coffee outline">';
+//     html += '<div class="name">' + coffee.name + '</div>';
+//     html += '<div class="roast">' + coffee.roast + '</div>';
+//     html += '</div>';
+//
+//     return html;
+// }
+
+// var isColdOutside = true;
+
+// var clothingToWear;
+//
+// if (isColdOutside) {
+//     clothingToWear = 'sweater and a jacket';
+// } else {
+//     clothingToWear = 'shorts and a t-shirt';
+// }
+//
+// var clothingToWear = isColdOutside ? 'sweater and a jacket' : 'shorts and a t-shirt';
+// console.log(isColdOutside)
+
