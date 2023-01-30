@@ -746,3 +746,38 @@ const neighborhood4 = {
 //
 // console.log(reverseStrings(strs));
 
+//----------Promises ----------------//
+
+// function functionHere(){
+//     fetch('api')
+//         .then(response => {
+//             return response.text();
+//         })
+//         .then(data => {
+//             console.log(data);
+//             return data;
+//         })
+//         .catch(error => {
+//             alert(error);
+//         })
+// }
+//
+// async function asyncFunction(){
+//     try {
+//         let response = await fetch('api');
+//         let data = await response.json();
+//         return data;
+//     } catch (error){
+//
+//     }
+// }
+
+    // (async () => {
+    //     try {
+    //         let variable = asyncFunction();
+    //         console.log("")
+    //         let variable2 = functionTwo();
+    //     } catch(error){
+    //         console.log(error)
+    //     }
+    // })
