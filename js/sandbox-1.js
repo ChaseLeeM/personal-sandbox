@@ -781,3 +781,25 @@ const neighborhood4 = {
     //         console.log(error)
     //     }
     // })
+//
+// const isDivisibleBy3 = n => n % 3 === 0;
+//
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//
+// console.log(numbers.filter(isDivisibleBy3));
+// console.log(numbers);
+//
+//
+
+const myPets = ["Dog", "Cat", "Hamster"];
+
+for (let i = 0; i < myPets.length; i += 1){
+    console.log(myPets[i]);
+}
+
+function allPets(array){
+    for (let i = 0; i < array.length; i += 1){
+        console.log("My favorite pets are " + array[i]);
+    }
+};
+ allPets(myPets);
